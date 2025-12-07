@@ -1,6 +1,6 @@
-# TF7xxx-PLC.exercises.quickstart.plc is using the following open source software components
+# Used open source software components in Lab-PLC.exercises.programming.basic
 
-## [Some](https://github.com/Some) which is published under the following licenses
+[Some](https://github.com/Some) which is published under the following licenses
 
 MIT License
 ...

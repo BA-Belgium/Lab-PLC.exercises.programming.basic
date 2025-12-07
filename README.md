@@ -36,6 +36,6 @@ Technologies used within the project:
 ---
 
 ## License 
-- [License](https://github.com/BA-Belgium\Lab-PLC.exercises.programming.basic/blob/main/Legal/LICENSE.md)
-- [Additional License Information](https://github.com/BA-Belgium\Lab-PLC.exercises.programming.basic/blob/main/Legal/AdditionalLicenseInformation.md)
+- [License](https://github.com/BA-Belgium/Lab-PLC.exercises.programming.basic/blob/main/legal/LICENSE.md)
+- [Additional License Information](https://github.com/BA-Belgium/Lab-PLC.exercises.programming.basic/blob/main/legal/AdditionalLicenseInformation.md)
 
