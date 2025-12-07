@@ -15,7 +15,7 @@ This sample code does not replace any official documentation or training. Please
 ---
 
 ## How to get support
-The code is PROVIDED AS-IS and UNSUPPORTED, therefor we refer to the offical TwinCAT Vision training at Beckhoff Belgium. 
+The code is PROVIDED AS-IS and UNSUPPORTED, therefor we refer to the offical trainings at Beckhoff Belgium or any other official Beckhoff subsidiary.
 Should you have any questions regarding the officially organized training sessions, please contact the Beckhoff Belgium sales office for any enquiries. Contact information can be found on the official Beckhoff website at https://www.beckhoff.be.
 
 ## Technologies/Versions 
