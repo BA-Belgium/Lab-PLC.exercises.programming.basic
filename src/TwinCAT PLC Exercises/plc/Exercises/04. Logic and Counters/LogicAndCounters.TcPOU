@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1">
+  <POU Name="LogicAndCounters" Id="{b3940d90-3391-4326-991f-f728b27834e0}" SpecialFunc="None">
+    <Declaration><![CDATA[PROGRAM LogicAndCounters
+]]></Declaration>
+    <Implementation>
+      <ST><![CDATA[]]></ST>
+    </Implementation>
+  </POU>
+</TcPlcObject>

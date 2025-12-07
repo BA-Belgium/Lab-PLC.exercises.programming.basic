@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1">
+  <POU Name="StringsAndStructs" Id="{8d8e914b-dbd1-4e69-8633-8e0d76e9ab04}" SpecialFunc="None">
+    <Declaration><![CDATA[PROGRAM StringsAndStructs
+]]></Declaration>
+    <Implementation>
+      <ST><![CDATA[]]></ST>
+    </Implementation>
+  </POU>
+</TcPlcObject>

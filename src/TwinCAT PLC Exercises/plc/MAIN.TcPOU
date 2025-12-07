@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1">
+  <POU Name="MAIN" Id="{2fad4f42-d39c-4c01-a8b8-3ea2910d0ceb}" SpecialFunc="None">
+    <Declaration><![CDATA[(*
+	Simple solutions for the exercices of the book 
+	Collection of Exercises for PLC Programming
+	by Tom Mejer Antonson
+	ISBN: 978-87-4305-780-2
+*)
+PROGRAM MAIN
+VAR
+END_VAR
+]]></Declaration>
+    <Implementation>
+      <ST><![CDATA[LogicalCircuits();
+Safety();
+LogicAndCounters();
+Timers();
+AnalogSignals();
+AppliedMathematics();
+Arrays();
+FunctionsAndFunctionBlocks();
+StringsAndStructs();
+ComplexExercises();]]></ST>
+    </Implementation>
+  </POU>
+</TcPlcObject>

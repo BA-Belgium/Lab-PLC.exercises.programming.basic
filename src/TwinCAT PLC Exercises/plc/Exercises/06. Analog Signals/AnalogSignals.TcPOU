@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1">
+  <POU Name="AnalogSignals" Id="{9204c07b-a1f6-4457-b29f-f2f8200423b3}" SpecialFunc="None">
+    <Declaration><![CDATA[PROGRAM AnalogSignals
+]]></Declaration>
+    <Implementation>
+      <ST><![CDATA[]]></ST>
+    </Implementation>
+  </POU>
+</TcPlcObject>

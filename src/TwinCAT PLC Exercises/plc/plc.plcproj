@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <FileVersion>1.0.0.0</FileVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{27581cda-5420-4f6d-bd42-522eaae4c6ce}</ProjectGuid>
+    <SubObjectsSortedByName>true</SubObjectsSortedByName>
+    <DownloadApplicationInfo>true</DownloadApplicationInfo>
+    <WriteProductVersion>false</WriteProductVersion>
+    <GenerateTpy>false</GenerateTpy>
+    <Name>plc</Name>
+    <ProgramVersion>3.1.4026.19</ProgramVersion>
+    <WriteBookmarksToFile>true</WriteBookmarksToFile>
+    <Application>{747264ad-e61f-4987-b58c-1c212f1a692c}</Application>
+    <TypeSystem>{0d81e09f-f5f2-4162-9349-fa964e7c3408}</TypeSystem>
+    <Implicit_Task_Info>{f7b852cd-1ac5-4aa9-87d1-5de24873b6cb}</Implicit_Task_Info>
+    <Implicit_KindOfTask>{e3ce7ca4-9a33-4ad8-a0f9-88c0ac0daedd}</Implicit_KindOfTask>
+    <Implicit_Jitter_Distribution>{eb6c7352-e9ce-4f45-b0c0-2e0e9dc9aa53}</Implicit_Jitter_Distribution>
+    <LibraryReferences>{8b4cd041-14e3-4c46-822c-b6747c8604f1}</LibraryReferences>
+    <Company>Beckhoff Automation Belgium</Company>
+    <Released>false</Released>
+    <Title>ExercicesForPlcProgramming</Title>
+    <ProjectVersion>1.0.0.0</ProjectVersion>
+    <Description>Exercices of the book 
+Collection of Exercises for PLC Programming
+by Tom Mejer Antonson
+ISBN: 978-87-4305-780-2</Description>
+    <GlobalVersionStructureIncluded>true</GlobalVersionStructureIncluded>
+    <POUsForPropertyAccessIncluded>true</POUsForPropertyAccessIncluded>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="Exercises\02. Logical Circuits\LogicalCircuits.TcPOU">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Exercises\02. Logical Circuits\LogicalCircuits_Ex01.TcPOU">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Exercises\03. Safety\Safety.TcPOU">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Exercises\04. Logic and Counters\LogicAndCounters.TcPOU">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Exercises\05. Timers\Timers.TcPOU">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Exercises\06. Analog Signals\AnalogSignals.TcPOU">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Exercises\07. Applied Mathematics\AppliedMathematics.TcPOU">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Exercises\08. Arrays\Arrays.TcPOU">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Exercises\09. Functions and Function Blocks\FunctionsAndFunctionBlocks.TcPOU">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Exercises\10. Strings and Structs\StringsAndStructs.TcPOU">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Exercises\11. Complex Exercises\ComplexExercises.TcPOU">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MAIN.TcPOU">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="PlcTask.TcTTO">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Project Information\F_GetCompany.TcPOU">
+      <SubType>Code</SubType>
+      <SystemCall>true</SystemCall>
+    </Compile>
+    <Compile Include="Project Information\F_GetTitle.TcPOU">
+      <SubType>Code</SubType>
+      <SystemCall>true</SystemCall>
+    </Compile>
+    <Compile Include="Project Information\F_GetVersion.TcPOU">
+      <SubType>Code</SubType>
+      <SystemCall>true</SystemCall>
+    </Compile>
+    <Compile Include="Version\Global_Version.TcGVL">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="_Library\Inputs\POUs\DigitalInput_NO.TcPOU">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="_Library\Inputs\POUs\DigitalOutput_NO.TcPOU">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="_Library\_TemplateFB.TcPOU">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Exercises\02. Logical Circuits" />
+    <Folder Include="Exercises\04. Logic and Counters" />
+    <Folder Include="Exercises\05. Timers" />
+    <Folder Include="Exercises\06. Analog Signals" />
+    <Folder Include="Exercises\07. Applied Mathematics" />
+    <Folder Include="Exercises\08. Arrays" />
+    <Folder Include="Exercises\09. Functions and Function Blocks" />
+    <Folder Include="Exercises\03. Safety" />
+    <Folder Include="Exercises\10. Strings and Structs" />
+    <Folder Include="Exercises\11. Complex Exercises" />
+    <Folder Include="Project Information" />
+    <Folder Include="Version" />
+    <Folder Include="_Library" />
+    <Folder Include="_Library\Helpers" />
+    <Folder Include="_Library\Helpers\DUTs" />
+    <Folder Include="_Library\Helpers\GVLs" />
+    <Folder Include="_Library\Helpers\POUs" />
+    <Folder Include="_Library\Helpers\VISUs" />
+    <Folder Include="_Library\Outputs" />
+    <Folder Include="_Library\Inputs" />
+    <Folder Include="_Library\Inputs\DUTs" />
+    <Folder Include="_Library\Inputs\GVLs" />
+    <Folder Include="_Library\Inputs\POUs" />
+    <Folder Include="_Library\Inputs\VISUs" />
+    <Folder Include="_Library\Outputs\DUTs" />
+    <Folder Include="_Library\Outputs\GVLs" />
+    <Folder Include="_Library\Outputs\POUs" />
+    <Folder Include="_Library\Outputs\VISUs" />
+    <Folder Include="Exercises" />
+  </ItemGroup>
+  <ItemGroup>
+    <PlaceholderReference Include="Tc2_Standard">
+      <DefaultResolution>Tc2_Standard, * (Beckhoff Automation GmbH)</DefaultResolution>
+      <Namespace>Tc2_Standard</Namespace>
+    </PlaceholderReference>
+    <PlaceholderReference Include="Tc2_System">
+      <DefaultResolution>Tc2_System, * (Beckhoff Automation GmbH)</DefaultResolution>
+      <Namespace>Tc2_System</Namespace>
+    </PlaceholderReference>
+    <PlaceholderReference Include="Tc3_Module">
+      <DefaultResolution>Tc3_Module, * (Beckhoff Automation GmbH)</DefaultResolution>
+      <Namespace>Tc3_Module</Namespace>
+      <SystemLibrary>true</SystemLibrary>
+    </PlaceholderReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="plc.tmc">
+      <SubType>Content</SubType>
+    </None>
+  </ItemGroup>
+  <ProjectExtensions>
+    <PlcProjectOptions>
+      <XmlArchive>
+  <Data>
+    <o xml:space="preserve" t="OptionKey">
+      <v n="Name">"&lt;ProjectRoot&gt;"</v>
+      <d n="SubKeys" t="Hashtable" ckt="String" cvt="OptionKey">
+        <v>{192FAD59-8248-4824-A8DE-9177C94C195A}</v>
+        <o>
+          <v n="Name">"{192FAD59-8248-4824-A8DE-9177C94C195A}"</v>
+          <d n="SubKeys" t="Hashtable" />
+          <d n="Values" t="Hashtable" />
+        </o>
+        <v>{29BD8D0C-3586-4548-BB48-497B9A01693F}</v>
+        <o>
+          <v n="Name">"{29BD8D0C-3586-4548-BB48-497B9A01693F}"</v>
+          <d n="SubKeys" t="Hashtable" ckt="String" cvt="OptionKey">
+            <v>Rules</v>
+            <o>
+              <v n="Name">"Rules"</v>
+              <d n="SubKeys" t="Hashtable" ckt="String" cvt="OptionKey">
+                <v>167</v>
+                <o>
+                  <v n="Name">"167"</v>
+                  <d n="SubKeys" t="Hashtable" />
+                  <d n="Values" t="Hashtable" ckt="String" cvt="Boolean">
+                    <v>bActive</v>
+                    <v>True</v>
+                  </d>
+                </o>
+                <v>175</v>
+                <o>
+                  <v n="Name">"175"</v>
+                  <d n="SubKeys" t="Hashtable" />
+                  <d n="Values" t="Hashtable" ckt="String" cvt="Boolean">
+                    <v>bActive</v>
+                    <v>True</v>
+                  </d>
+                </o>
+                <v>27</v>
+                <o>
+                  <v n="Name">"27"</v>
+                  <d n="SubKeys" t="Hashtable" />
+                  <d n="Values" t="Hashtable" ckt="String" cvt="Boolean">
+                    <v>bActive</v>
+                    <v>True</v>
+                  </d>
+                </o>
+                <v>28</v>
+                <o>
+                  <v n="Name">"28"</v>
+                  <d n="SubKeys" t="Hashtable" />
+                  <d n="Values" t="Hashtable" ckt="String" cvt="Boolean">
+                    <v>bActive</v>
+                    <v>True</v>
+                  </d>
+                </o>
+                <v>33</v>
+                <o>
+                  <v n="Name">"33"</v>
+                  <d n="SubKeys" t="Hashtable" />
+                  <d n="Values" t="Hashtable" ckt="String" cvt="Boolean">
+                    <v>bActive</v>
+                    <v>True</v>
+                  </d>
+                </o>
+                <v>4</v>
+                <o>
+                  <v n="Name">"4"</v>
+                  <d n="SubKeys" t="Hashtable" />
+                  <d n="Values" t="Hashtable" ckt="String" cvt="Boolean">
+                    <v>bActive</v>
+                    <v>True</v>
+                  </d>
+                </o>
+                <v>6</v>
+                <o>
+                  <v n="Name">"6"</v>
+                  <d n="SubKeys" t="Hashtable" />
+                  <d n="Values" t="Hashtable" ckt="String" cvt="Boolean">
+                    <v>bActive</v>
+                    <v>True</v>
+                  </d>
+                </o>
+              </d>
+              <d n="Values" t="Hashtable" />
+            </o>
+          </d>
+          <d n="Values" t="Hashtable" />
+        </o>
+        <v>{40450F57-0AA3-4216-96F3-5444ECB29763}</v>
+        <o>
+          <v n="Name">"{40450F57-0AA3-4216-96F3-5444ECB29763}"</v>
+          <d n="SubKeys" t="Hashtable" />
+          <d n="Values" t="Hashtable" />
+        </o>
+        <v>{8A0FB252-96EB-4DCC-A5B4-B4804D05E2D6}</v>
+        <o>
+          <v n="Name">"{8A0FB252-96EB-4DCC-A5B4-B4804D05E2D6}"</v>
+          <d n="SubKeys" t="Hashtable" />
+          <d n="Values" t="Hashtable" ckt="String" cvt="Boolean">
+            <v>WriteLineIDs</v>
+            <v>True</v>
+          </d>
+        </o>
+        <v>{8F99A816-E488-41E4-9FA3-846536012284}</v>
+        <o>
+          <v n="Name">"{8F99A816-E488-41E4-9FA3-846536012284}"</v>
+          <d n="SubKeys" t="Hashtable" />
+          <d n="Values" t="Hashtable" ckt="String" cvt="String">
+            <v>DisabledWarningIds</v>
+            <v>410,5410</v>
+          </d>
+        </o>
+        <v>{F66C7017-BDD8-4114-926C-81D6D687E35F}</v>
+        <o>
+          <v n="Name">"{F66C7017-BDD8-4114-926C-81D6D687E35F}"</v>
+          <d n="SubKeys" t="Hashtable" />
+          <d n="Values" t="Hashtable" ckt="String" cvt="Boolean">
+            <v>CalcActiveTransOnly</v>
+            <v>True</v>
+          </d>
+        </o>
+      </d>
+      <d n="Values" t="Hashtable" />
+    </o>
+  </Data>
+  <TypeList>
+    <Type n="Boolean">System.Boolean</Type>
+    <Type n="Hashtable">System.Collections.Hashtable</Type>
+    <Type n="OptionKey">{54dd0eac-a6d8-46f2-8c27-2f43c7e49861}</Type>
+    <Type n="String">System.String</Type>
+  </TypeList>
+</XmlArchive>
+    </PlcProjectOptions>
+  </ProjectExtensions>
+</Project>

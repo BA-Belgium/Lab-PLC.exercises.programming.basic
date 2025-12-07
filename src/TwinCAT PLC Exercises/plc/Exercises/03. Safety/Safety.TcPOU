@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1">
+  <POU Name="Safety" Id="{c0fa21ec-79d9-432e-a6c8-9a56af19668a}" SpecialFunc="None">
+    <Declaration><![CDATA[PROGRAM Safety
+]]></Declaration>
+    <Implementation>
+      <ST><![CDATA[]]></ST>
+    </Implementation>
+  </POU>
+</TcPlcObject>

@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1">
+  <POU Name="ComplexExercises" Id="{d3591d61-8c3a-4082-b225-3ff7b75cc993}" SpecialFunc="None">
+    <Declaration><![CDATA[PROGRAM ComplexExercises
+]]></Declaration>
+    <Implementation>
+      <ST><![CDATA[]]></ST>
+    </Implementation>
+  </POU>
+</TcPlcObject>

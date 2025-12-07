@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1">
+  <POU Name="Arrays" Id="{cbc8e7a1-469d-4f0b-975e-c0483b44ad8c}" SpecialFunc="None">
+    <Declaration><![CDATA[PROGRAM Arrays
+]]></Declaration>
+    <Implementation>
+      <ST><![CDATA[]]></ST>
+    </Implementation>
+  </POU>
+</TcPlcObject>
