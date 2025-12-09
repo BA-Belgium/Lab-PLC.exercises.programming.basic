@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1">
+  <POU Name="logcacounters_ex2" Id="{3b572016-b6bd-4019-a7d4-7d6477109347}" SpecialFunc="None">
+    <Declaration><![CDATA[PROGRAM logcacounters_ex2
+VAR
+	S1				: DigitalInput_NO;
+	S2				: DigitalInput_NO;
+	P1				: DigitalOutput;
+	CV 				: INT := 0;
+	S1flank 		: R_trig;
+END_VAR
+]]></Declaration>
+    <Implementation>
+      <ST><![CDATA[S1flank(clk := S1.isOn);
+
+IF S1flank.Q THEN
+	CV := CV + 1; 
+END_IF 
+IF CV >= 4 THEN
+	P1.On();
+END_IF
+IF S2.isOn THEN
+	CV := 0;
+	P1.Off();
+END_IF]]></ST>
+    </Implementation>
+  </POU>
+</TcPlcObject>

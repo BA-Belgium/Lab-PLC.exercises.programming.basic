@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1">
+  <POU Name="LogicandCountersex01_1" Id="{f818bb93-bac9-404f-92f1-bdab8b2b06ee}" SpecialFunc="None">
+    <Declaration><![CDATA[PROGRAM LogicandCountersex01_1
+VAR
+	S1				: DigitalInput_NO;
+	P1				: DigitalOutput;
+	CV				: INT  := 0;
+	S1_flank		: R_trig;
+END_VAR
+]]></Declaration>
+    <Implementation>
+      <ST><![CDATA[S1_flank(clk := S1.isOn);
+
+IF S1_flank.Q THEN
+	CV := CV + 1;
+END_IF
+
+IF CV >= 5 THEN
+	P1.On();
+END_IF]]></ST>
+    </Implementation>
+  </POU>
+</TcPlcObject>
