@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1">
+  <POU Name="motoroef2_12" Id="{dd76a4de-8a8e-44f4-8bda-43aebb5c8744}" SpecialFunc="None">
+    <Declaration><![CDATA[FUNCTION_BLOCK motoroef2_12
+VAR_INPUT
+	DI_Inputsensorhoog : BOOL;
+	DI_Inputsensorlaag : BOOL;
+	DI_InputS1 			: BOOL;
+	DI_InputS2			: BOOL;	
+END_VAR
+VAR_OUTPUT
+	O_motordown 		: BOOL;
+	O_motorup			: BOOL;
+END_VAR
+VAR
+END_VAR
+]]></Declaration>
+    <Implementation>
+      <ST><![CDATA[
+
+// Move UP: S2 pressed AND not at upper limit
+IF DI_inputS2 AND NOT DI_inputsensorhoog THEN
+    O_motorup := TRUE;
+    O_motordown := FALSE;
+END_IF
+
+// Move DOWN: S1 pressed AND not at lower limit  
+IF DI_inputS1 AND NOT DI_inputsensorlaag THEN
+    O_motorup := FALSE;
+    O_motordown := TRUE;
+END_IF
+
+// Safety: If both buttons pressed or at any limit, stop
+IF (DI_inputS1 AND DI_inputS2) OR DI_inputsensorhoog OR DI_inputsensorlaag THEN
+    O_motorup := FALSE;
+    O_motordown := FALSE;
+END_IF]]></ST>
+    </Implementation>
+  </POU>
+</TcPlcObject>
