@@ -92,6 +92,9 @@ ISBN: 978-87-4305-780-2</Description>
     <Compile Include="Exercises\09. Functions and Function Blocks\FunctionsAndFunctionBlocksex01.TcPOU">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="Exercises\09. Functions and Function Blocks\FunctionsAndFunctionBlocksex02.TcPOU">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="Exercises\10. Strings and Structs\StringsAndStructs.TcPOU">
       <SubType>Code</SubType>
     </Compile>

@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1">
+  <POU Name="FunctionsAndFunctionBlocksex02" Id="{1e9dea47-b0a3-4534-be8d-089cb81a0bfe}" SpecialFunc="None">
+    <Declaration><![CDATA[PROGRAM FunctionsAndFunctionBlocksex02
+VAR
+number1 		: number;
+number2			: number;
+sum12			: number;
+END_VAR]]></Declaration>
+    <Implementation>
+      <ST><![CDATA[number1 * number2 := sum12;]]></ST>
+    </Implementation>
+  </POU>
+</TcPlcObject>
