@@ -50,6 +50,9 @@ ISBN: 978-87-4305-780-2</Description>
     <Compile Include="Exercises\02. Logical Circuits\LogicalCircuits_Ex06.TcPOU">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="Exercises\02. Logical Circuits\LogicalCircuits_Ex07.TcPOU">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="Exercises\03. Safety\Safety.TcPOU">
       <SubType>Code</SubType>
     </Compile>
@@ -101,6 +104,9 @@ ISBN: 978-87-4305-780-2</Description>
     <Compile Include="_Library\Inputs\GVLs\GVL_IO.TcGVL">
       <SubType>Code</SubType>
       <LinkAlways>true</LinkAlways>
+    </Compile>
+    <Compile Include="_Library\Inputs\POUs\DigitalInput_NC.TcPOU">
+      <SubType>Code</SubType>
     </Compile>
     <Compile Include="_Library\Inputs\POUs\Switch_2P.TcPOU">
       <SubType>Code</SubType>

@@ -3,12 +3,18 @@
   <POU Name="LogicalCircuits_Ex06" Id="{36f72446-03f5-4adf-86a9-10882a1bc829}" SpecialFunc="None">
     <Declaration><![CDATA[PROGRAM LogicalCircuits_Ex06
 VAR
-	S1					: Digitallnput_NO;
+	S1					: DigitalInput_NO;
 	P1 					: DigitalOutput;
 	P2 					: DigitalOutput;
 END_VAR]]></Declaration>
     <Implementation>
-      <ST><![CDATA[if ]]></ST>
+      <ST><![CDATA[IF S1.isOn THEN
+	P1.Off();
+	P2.On();
+ELSE
+	P1.ON();
+	P2.OFF();	
+END_IF]]></ST>
     </Implementation>
   </POU>
 </TcPlcObject>
