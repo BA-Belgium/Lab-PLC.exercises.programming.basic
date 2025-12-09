@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1">
+  <POU Name="LogicalCircuits_Ex11" Id="{8ec38c64-86f3-4f89-9efd-ab6dc29e827e}" SpecialFunc="None">
+    <Declaration><![CDATA[PROGRAM LogicalCircuits_Ex11
+VAR
+	S1stand 				: Switch_2P;
+	sensor			 		: digitalInput_NO;
+	
+	motor: MMotor;
+END_VAR]]></Declaration>
+    <Implementation>
+      <ST><![CDATA[
+
+motor(start:=(S1stand.position0 and sensor.isOff) , stop:= (S1stand.position1 or sensor.isOn), motor=> );]]></ST>
+    </Implementation>
+  </POU>
+</TcPlcObject>

@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1">
+  <POU Name="MMotor" Id="{e442abd9-743e-4cf6-afd8-dd06585db08a}" SpecialFunc="None">
+    <Declaration><![CDATA[FUNCTION_BLOCK MMotor
+VAR_INPUT
+	start AT %I* : BOOL;
+	stop AT %I* : BOOL; 
+END_VAR
+VAR_OUTPUT
+	motor AT %Q* : BOOL;
+END_VAR
+VAR
+END_VAR
+]]></Declaration>
+    <Implementation>
+      <ST><![CDATA[IF start THEN
+	motor := TRUE;
+ELSIF stop THEN
+	motor := FALSE;
+END_IF]]></ST>
+    </Implementation>
+  </POU>
+</TcPlcObject>
