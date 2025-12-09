@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1">
+  <POU Name="LogicalCircuits_Ex09" Id="{a03fc3fd-ee5a-48b3-b422-58171a2fc09a}" SpecialFunc="None">
+    <Declaration><![CDATA[PROGRAM LogicalCircuits_Ex09
+VAR
+	stand 				: Switch_4P;
+	P1 					: DigitalOutput;
+	P2 					: DigitalOutput;
+	P3 					: DigitalOutput;
+END_VAR]]></Declaration>
+    <Implementation>
+      <ST><![CDATA[IF stand.Po0 THEN
+	P1.Off(); P2.Off(); P3.Off();
+ELSIF stand.Po1 THEN
+	P1.On(); P2.Off(); P3.Off();
+ELSIF Stand.Po2 THEN
+	P1.Off(); P2.On(); P3.Off();
+ELSIF stand.Po3 THEN
+	P1.On(); P2.On(); P3.On();
+END_IF]]></ST>
+    </Implementation>
+  </POU>
+</TcPlcObject>
