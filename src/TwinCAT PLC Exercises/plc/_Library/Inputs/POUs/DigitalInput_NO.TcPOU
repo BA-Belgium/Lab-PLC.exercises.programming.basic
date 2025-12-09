@@ -4,7 +4,7 @@
     <Declaration><![CDATA[{attribute 'no_explicit_call' := 'do not call this POU directly'} 
 FUNCTION_BLOCK DigitalInput_NO
 VAR
-	input						AT %I*: BOOL;
+	DI_Input						AT %I*: BOOL;
 END_VAR
 ]]></Declaration>
     <Implementation>
@@ -15,7 +15,7 @@ END_VAR
       <Get Name="Get" Id="{94a52a54-7745-47c6-8232-b056cd9b5e19}">
         <Declaration><![CDATA[]]></Declaration>
         <Implementation>
-          <ST><![CDATA[isOff 		:= NOT input;
+          <ST><![CDATA[isOff 		:= NOT DI_Input;
 ]]></ST>
         </Implementation>
       </Get>
@@ -25,7 +25,7 @@ END_VAR
       <Get Name="Get" Id="{8819dc3c-76fb-49e8-ace3-ec88a172e7ba}">
         <Declaration><![CDATA[]]></Declaration>
         <Implementation>
-          <ST><![CDATA[isOn			:= input;
+          <ST><![CDATA[isOn			:= DI_Input;
 ]]></ST>
         </Implementation>
       </Get>

@@ -1,4 +1,31 @@
 <?xml version="1.0"?>
 <TcSmItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.beckhoff.com/schemas/2012/07/TcSmProject" TcSmVersion="1.0" TcVersion="3.1.4026.19" ClassName="CTComPlcObjDef">
-	<Instance/>
+	<Instance TmcHash="{1FAAE3F4-BBBA-9DEF-B33F-F0E6F81A5F73}">
+		<Vars VarGrpType="1">
+			<Name>PlcTask Inputs</Name>
+			<Var>
+				<Name>LogicalCircuits_Ex01.S1.DI_Input</Name>
+				<Type>BOOL</Type>
+			</Var>
+			<Var>
+				<Name>LogicalCircuits_Ex01.M1.eindeloop_L.DI_Input</Name>
+				<Type>BOOL</Type>
+			</Var>
+			<Var>
+				<Name>LogicalCircuits_Ex01.M1.eindeloop_R.DI_Input</Name>
+				<Type>BOOL</Type>
+			</Var>
+			<Var>
+				<Name>GVL_IO.S1.DI_Input</Name>
+				<Type>BOOL</Type>
+			</Var>
+		</Vars>
+		<Vars VarGrpType="2" AreaNo="1">
+			<Name>PlcTask Outputs</Name>
+			<Var>
+				<Name>LogicalCircuits_Ex01.P1.DO_Output</Name>
+				<Type>BOOL</Type>
+			</Var>
+		</Vars>
+	</Instance>
 </TcSmItem>

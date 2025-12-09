@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1">
+  <GVL Name="GVL_IO" Id="{3ef35004-9a05-4ea4-b13d-4444f84a0c58}">
+    <Declaration><![CDATA[{attribute 'qualified_only'}
+VAR_GLOBAL
+	// S1						AT %I*: BOOL;		// S14.2
+	// S1						: DigitalInput_NO;   	// S14.2
+END_VAR]]></Declaration>
+  </GVL>
+</TcPlcObject>

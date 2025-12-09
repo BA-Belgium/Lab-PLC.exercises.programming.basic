@@ -4,7 +4,8 @@
     <Declaration><![CDATA[PROGRAM LogicalCircuits
 ]]></Declaration>
     <Implementation>
-      <ST><![CDATA[LogicalCircuits_Ex01();]]></ST>
+      <ST><![CDATA[//LogicalCircuits_Ex01();
+LogicalCircuits_Ex02();]]></ST>
     </Implementation>
   </POU>
 </TcPlcObject>

@@ -1,18 +1,17 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <TcPlcObject Version="1.1.0.1">
-  <POU Name="LogicalCircuits_Ex01" Id="{69b0466a-27a2-4fbb-9e44-83f2117ad852}" SpecialFunc="None">
-    <Declaration><![CDATA[PROGRAM LogicalCircuits_Ex01
+  <POU Name="LogicalCircuits_Ex02" Id="{928081cd-c731-4064-9f20-4dd0f589a3e1}" SpecialFunc="None">
+    <Declaration><![CDATA[PROGRAM LogicalCircuits_Ex02
 VAR
 	S1						: DigitalInput_NO;
+	S2						: DigitalInput_NO;
 	P1						: DigitalOutput;
 END_VAR]]></Declaration>
     <Implementation>
       <ST><![CDATA[IF S1.isOn THEN
 	P1.On();
-//	P1.DO_output := TRUE;
 ELSE
 	P1.Off();
-//	P1.DO_output := FALSE;
 END_IF]]></ST>
     </Implementation>
   </POU>
