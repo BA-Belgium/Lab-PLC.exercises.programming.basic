@@ -89,6 +89,9 @@ ISBN: 978-87-4305-780-2</Description>
     <Compile Include="Exercises\09. Functions and Function Blocks\FunctionsAndFunctionBlocks.TcPOU">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="Exercises\09. Functions and Function Blocks\FunctionsAndFunctionBlocksex01.TcPOU">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="Exercises\10. Strings and Structs\StringsAndStructs.TcPOU">
       <SubType>Code</SubType>
     </Compile>
@@ -127,6 +130,9 @@ ISBN: 978-87-4305-780-2</Description>
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="_Library\Inputs\POUs\motoroef2_12.TcPOU">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="_Library\Inputs\POUs\number.TcPOU">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="_Library\Inputs\POUs\Switch_2P.TcPOU">

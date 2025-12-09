@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1">
+  <POU Name="number" Id="{35d5f773-f920-47e3-8c55-ef80baae71ee}" SpecialFunc="None">
+    <Declaration><![CDATA[FUNCTION_BLOCK number
+VAR
+	number 		at %I* : int;
+END_VAR
+]]></Declaration>
+    <Implementation>
+      <ST><![CDATA[]]></ST>
+    </Implementation>
+  </POU>
+</TcPlcObject>
