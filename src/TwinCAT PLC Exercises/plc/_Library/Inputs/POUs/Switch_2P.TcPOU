@@ -16,8 +16,7 @@ END_VAR
     <Property Name="position0" Id="{f2d4dead-14cd-458e-901d-9a307c79e61a}">
       <Declaration><![CDATA[PROPERTY position0 : BOOL]]></Declaration>
       <Get Name="Get" Id="{2f12a057-fcc5-4a70-a53e-bc0a04fc1234}">
-        <Declaration><![CDATA[
-]]></Declaration>
+        <Declaration><![CDATA[]]></Declaration>
         <Implementation>
           <ST><![CDATA[position0 := not Switch_2P;]]></ST>
         </Implementation>
