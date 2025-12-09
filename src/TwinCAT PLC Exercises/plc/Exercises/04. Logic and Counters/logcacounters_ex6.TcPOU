@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1">
+  <POU Name="logcacounters_ex6" Id="{a2e6a850-3ed0-41c9-8d42-e6fa010740c7}" SpecialFunc="None">
+    <Declaration><![CDATA[PROGRAM logcacounters_ex6
+VAR
+	S1				: DigitalInput_NO;
+	S2				: DigitalInput_NO;
+	P1 				: DigitalOutput;
+	CV1 				: INT := 0;
+	CV2 				: INT := 0;
+	S1flank 		: R_trig;
+	S2flank 		: R_trig;
+END_VAR
+]]></Declaration>
+    <Implementation>
+      <ST><![CDATA[S1flank(clk := S1.isOn);
+S2flank(clk := S2.isOn);
+
+
+IF S1flank.Q THEN
+	cv1 := cv1 + 1;
+END_IF
+IF S2flank.Q THEN
+	CV2 := CV2 + 1;
+END_IF
+IF CV1 = 4 AND CV2 = 5 THEN
+	P1.On();
+END_IF
+IF S1.isOn AND S2.isOn THEN 
+	CV1 := 0;
+	CV2 := 0;
+END_IF
+
+//vervolg voor de volgende oefening 
+IF CV1 > 6 THEN
+	P1.Off(); CV1 := 0;
+END_IF
+IF CV2 > 6 THEN
+	P1.Off(); CV2 := 0;
+END_IF]]></ST>
+    </Implementation>
+  </POU>
+</TcPlcObject>

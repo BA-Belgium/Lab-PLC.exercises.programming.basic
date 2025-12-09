@@ -83,6 +83,9 @@ ISBN: 978-87-4305-780-2</Description>
     <Compile Include="Exercises\04. Logic and Counters\logcacounters_ex5.TcPOU">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="Exercises\04. Logic and Counters\logcacounters_ex6.TcPOU">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="Exercises\04. Logic and Counters\LogicAndCounters.TcPOU">
       <SubType>Code</SubType>
     </Compile>
