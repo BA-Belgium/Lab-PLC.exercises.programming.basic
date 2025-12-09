@@ -4,7 +4,6 @@
     <Declaration><![CDATA[PROGRAM logcacounters_ex3
 VAR
 	S1				: DigitalInput_NO;
-	S2				: DigitalInput_NO;
 	P1				: DigitalOutput;
 	CV 				: INT := 0;
 	S1flank 		: R_trig;
