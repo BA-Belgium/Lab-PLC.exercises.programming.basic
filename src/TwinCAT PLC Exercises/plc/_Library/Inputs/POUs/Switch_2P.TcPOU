@@ -13,22 +13,22 @@ END_VAR
     <Implementation>
       <ST><![CDATA[]]></ST>
     </Implementation>
-    <Property Name="position0_off" Id="{f2d4dead-14cd-458e-901d-9a307c79e61a}">
-      <Declaration><![CDATA[PROPERTY position0_off : BOOL]]></Declaration>
+    <Property Name="position0" Id="{f2d4dead-14cd-458e-901d-9a307c79e61a}">
+      <Declaration><![CDATA[PROPERTY position0 : BOOL]]></Declaration>
       <Get Name="Get" Id="{2f12a057-fcc5-4a70-a53e-bc0a04fc1234}">
         <Declaration><![CDATA[
 ]]></Declaration>
         <Implementation>
-          <ST><![CDATA[position0_off := not Switch_2P;]]></ST>
+          <ST><![CDATA[position0 := not Switch_2P;]]></ST>
         </Implementation>
       </Get>
     </Property>
-    <Property Name="position1_on" Id="{39c309c0-e723-4261-b29b-4af7e289ee5a}">
-      <Declaration><![CDATA[PROPERTY position1_on : BOOL]]></Declaration>
+    <Property Name="position1" Id="{39c309c0-e723-4261-b29b-4af7e289ee5a}">
+      <Declaration><![CDATA[PROPERTY position1 : BOOL]]></Declaration>
       <Get Name="Get" Id="{1a260927-d8ec-49aa-a2f8-cec52816d6c4}">
         <Declaration><![CDATA[]]></Declaration>
         <Implementation>
-          <ST><![CDATA[position1_on := Switch_2P;]]></ST>
+          <ST><![CDATA[position1 := Switch_2P;]]></ST>
         </Implementation>
       </Get>
     </Property>

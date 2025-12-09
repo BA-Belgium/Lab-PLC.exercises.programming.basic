@@ -47,6 +47,9 @@ ISBN: 978-87-4305-780-2</Description>
     <Compile Include="Exercises\02. Logical Circuits\LogicalCircuits_Ex05.TcPOU">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="Exercises\02. Logical Circuits\LogicalCircuits_Ex06.TcPOU">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="Exercises\03. Safety\Safety.TcPOU">
       <SubType>Code</SubType>
     </Compile>

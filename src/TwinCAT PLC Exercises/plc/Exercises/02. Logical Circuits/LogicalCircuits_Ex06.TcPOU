@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1">
+  <POU Name="LogicalCircuits_Ex06" Id="{36f72446-03f5-4adf-86a9-10882a1bc829}" SpecialFunc="None">
+    <Declaration><![CDATA[PROGRAM LogicalCircuits_Ex06
+VAR
+	S1					: Digitallnput_NO;
+	P1 					: DigitalOutput;
+	P2 					: DigitalOutput;
+END_VAR]]></Declaration>
+    <Implementation>
+      <ST><![CDATA[if ]]></ST>
+    </Implementation>
+  </POU>
+</TcPlcObject>
