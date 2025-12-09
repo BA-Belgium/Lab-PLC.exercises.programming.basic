@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1">
+  <POU Name="FunctionsAndFunctionBlocksex03" Id="{796b8e3a-ac25-44a9-b77b-3e5d1168ed55}" SpecialFunc="None">
+    <Declaration><![CDATA[FUNCTION_BLOCK FunctionsAndFunctionBlocksex03
+VAR_INPUT
+	number1 		: number;
+	number2 		: number;
+END_VAR
+VAR_OUTPUT
+	sum12 			: number;
+	counter 		: number;
+END_VAR
+VAR
+END_VAR
+]]></Declaration>
+    <Implementation>
+      <ST><![CDATA[]]></ST>
+    </Implementation>
+  </POU>
+</TcPlcObject>

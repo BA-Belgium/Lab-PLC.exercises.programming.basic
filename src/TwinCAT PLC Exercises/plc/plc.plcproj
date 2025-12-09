@@ -74,6 +74,9 @@ ISBN: 978-87-4305-780-2</Description>
     <Compile Include="Exercises\04. Logic and Counters\LogicAndCounters.TcPOU">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="Exercises\04. Logic and Counters\LogicandCountersex01.TcPOU">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="Exercises\05. Timers\Timers.TcPOU">
       <SubType>Code</SubType>
     </Compile>
@@ -93,6 +96,9 @@ ISBN: 978-87-4305-780-2</Description>
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Exercises\09. Functions and Function Blocks\FunctionsAndFunctionBlocksex02.TcPOU">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Exercises\09. Functions and Function Blocks\FunctionsAndFunctionBlocksex03.TcPOU">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Exercises\10. Strings and Structs\StringsAndStructs.TcPOU">
