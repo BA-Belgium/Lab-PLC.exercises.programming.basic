@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1">
+  <POU Name="logcacounters_ex7" Id="{97827304-5919-4ae7-a0de-0e6999cde2b0}" SpecialFunc="None">
+    <Declaration><![CDATA[PROGRAM logcacounters_ex7
+VAR
+	B1				: DigitalInput_NO;
+	B2				: DigitalInput_NO;
+	B3				: DigitalInput_NO;
+	
+	M1				: digitaloutput;
+	p1				: digitaloutput;
+	P2				: digitaloutput;
+	
+	teller			: CTUD;
+	B1F				: R_trig;
+	B2F				: R_trig;
+	B3F				: R_trig;
+	
+END_VAR
+]]></Declaration>
+    <Implementation>
+      <ST><![CDATA[B1F(clk := B1);
+B2F(clk := B2);
+B3F(clk := B3);
+
+teller(
+	CU:= (B1.isOn AND B2F.Q), 
+	CD:= B3F.Q, 
+	RESET:= , 
+	LOAD:= , 
+	PV:= , 
+	QU=> 20, 
+	QD=> 0, 
+	CV=> 0);]]></ST>
+    </Implementation>
+  </POU>
+</TcPlcObject>
