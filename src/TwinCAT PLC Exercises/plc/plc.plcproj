@@ -101,6 +101,9 @@ ISBN: 978-87-4305-780-2</Description>
     <Compile Include="Exercises\05. Timers\timers_ex01.TcPOU">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="Exercises\05. Timers\timers_ex02.TcPOU">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="Exercises\06. Analog Signals\AnalogSignals.TcPOU">
       <SubType>Code</SubType>
     </Compile>
