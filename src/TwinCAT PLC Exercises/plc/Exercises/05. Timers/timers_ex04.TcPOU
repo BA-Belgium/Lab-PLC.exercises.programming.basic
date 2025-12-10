@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1">
+  <POU Name="timers_ex04" Id="{6e0a85b1-3ae8-40d5-b344-97abe4e87c31}" SpecialFunc="None">
+    <Declaration><![CDATA[FUNCTION_BLOCK timers_ex04
+VAR_INPUT
+	stand			: Switch_2P;
+END_VAR
+VAR_OUTPUT
+	P1				: DigitalOutput;
+	P2				: DigitalOutput;
+END_VAR
+VAR
+	Timer1_ex04		: TON;
+	Timer2_ex04		: Tof; 
+END_VAR
+]]></Declaration>
+    <Implementation>
+      <ST><![CDATA[Timer1_ex04(IN:= stand.position1, PT:= T#10S, Q=> , ET=> );
+Timer2_ex04(IN:= P2.On, PT:= T#10S , Q=> , ET=> );
+IF stand.position1 THEN
+	P1.On();
+END_IF
+IF Timer1_ex04.Q THEN
+	P1.On();
+	P2.On();
+END_IF
+IF Timer2_ex04.Q THEN
+	P1.Off();
+	P2.Off();
+END_IF]]></ST>
+    </Implementation>
+  </POU>
+</TcPlcObject>

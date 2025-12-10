@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1">
+  <POU Name="timers_ex03" Id="{3cf5677d-42b2-4c0f-bcec-644d058688f1}" SpecialFunc="None">
+    <Declaration><![CDATA[FUNCTION_BLOCK timers_ex03
+VAR_INPUT
+	stand			: Switch_2P;
+END_VAR
+VAR_OUTPUT
+	P1				: DigitalOutput;
+END_VAR
+VAR
+	Timer1_ex03		: TOF;
+	Timer2_ex03		: TON;
+END_VAR
+]]></Declaration>
+    <Implementation>
+      <ST><![CDATA[]]></ST>
+    </Implementation>
+  </POU>
+</TcPlcObject>
