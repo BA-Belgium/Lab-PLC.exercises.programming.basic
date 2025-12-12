@@ -26,7 +26,7 @@ END_IF
 IF bAdd AND NOT bAddOld THEN
 	fsum := fSum + fValue ;
 	nCount := Ncount + 1 ;
-	
+	fAverage := fSum / ncount;
 END_IF
 
 bAddOld := bAdd;]]></ST>
