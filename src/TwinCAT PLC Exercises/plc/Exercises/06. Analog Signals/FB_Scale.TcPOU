@@ -1,15 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <TcPlcObject Version="1.1.0.1">
-  <POU Name="timers_ex06" Id="{f5234fa1-0c3b-46d1-95dc-1b8e645550b3}" SpecialFunc="None">
-    <Declaration><![CDATA[FUNCTION_BLOCK timers_ex06
+  <POU Name="FB_Scale" Id="{5d67843b-3530-4c9b-9c4d-73d68b9ee1cc}" SpecialFunc="None">
+    <Declaration><![CDATA[FUNCTION_BLOCK FB_Scale
 VAR_INPUT
-	
 END_VAR
 VAR_OUTPUT
-
 END_VAR
 VAR
-verschaal				: LIN_TRAFO; 
 END_VAR
 ]]></Declaration>
     <Implementation>

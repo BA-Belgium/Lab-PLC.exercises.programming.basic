@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1">
+  <POU Name="appliedmathematics_ex01" Id="{0eec60b3-120d-4af1-a70b-b220e8ccb54e}" SpecialFunc="None">
+    <Declaration><![CDATA[PROGRAM appliedmathematics_ex01
+VAR
+// Cylinder dimensions
+    cHeight : LREAL := 2.75;        // Height/Length of cylinder in meters
+    cDiameter : LREAL := 1.4;       // Diameter of cylinder in meters
+    cRadius : LREAL;                // Calculated radius
+    
+    // Sensor input
+    fSensorRaw : LREAL;             // Raw sensor value (e.g., 4-20mA, 0-10V)
+    fbLevelTrafo : FB_lin_trafo;    // Linear transformation instance
+    
+    // Calculated values
+    fLiquidHeight : LREAL;          // Current liquid level in meters
+    fVolumeLiters : LREAL;          // Volume in liters
+    fVolumeCubicMeters : LREAL;     // Volume in m³
+    fFillPercentage : LREAL;        // Fill percentage
+    fMaxVolume : LREAL;             // Maximum cylinder volume
+    
+    // Configuration
+    bVerticalCylinder : BOOL := TRUE;   // TRUE = vertical, FALSE = horizontal
+    fSensorMin : LREAL := 4.0;          // Sensor minimum (e.g., 4mA)
+    fSensorMax : LREAL := 20.0;         // Sensor maximum (e.g., 20mA)
+END_VAR
+]]></Declaration>
+    <Implementation>
+      <ST><![CDATA[]]></ST>
+    </Implementation>
+  </POU>
+</TcPlcObject>

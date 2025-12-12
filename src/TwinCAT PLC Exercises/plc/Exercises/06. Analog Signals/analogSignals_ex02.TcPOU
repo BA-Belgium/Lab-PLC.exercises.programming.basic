@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1">
+  <POU Name="analogSignals_ex01_1" Id="{67f6ed86-298f-49bf-b720-b209da7f3dd0}" SpecialFunc="None">
+    <Declaration><![CDATA[PROGRAM analogSignals_ex01_1
+VAR
+	Frawsensor		: REAL;
+	fScaledvalue	: real;
+	
+	LIN_TRAFO 		: FB_Scale;
+END_VAR
+]]></Declaration>
+    <Implementation>
+      <ST><![CDATA[LIN_TRAFO(
+	fIN:= frawsensor, 
+	fIN_min:= 4, 
+	fIN_max:= 20, 
+	fOUT_min:= 0, 
+	fOUT_max:= 100, 
+	fOUT=> fScaledvalue);]]></ST>
+    </Implementation>
+  </POU>
+</TcPlcObject>
