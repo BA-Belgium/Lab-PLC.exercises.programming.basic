@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1">
+  <POU Name="analogSignals_ex06" Id="{7821f3af-0438-4c5c-ae29-a4b263456196}" SpecialFunc="None">
+    <Declaration><![CDATA[PROGRAM analogSignals_ex06
+VAR
+	valvecontrol			: REAL;
+	valveopening			: REAL;
+	
+	LIN_TRAFO 			: FB_Scale;
+END_VAR
+]]></Declaration>
+    <Implementation>
+      <ST><![CDATA[LIN_TRAFO(
+	fIN:= valvecontrol, 
+	fIN_min:= 0, 
+	fIN_max:= 100, 
+	fOUT_min:= 0, 
+	fOUT_max:= 10, 
+	fOUT=> valveopening);]]></ST>
+    </Implementation>
+  </POU>
+</TcPlcObject>

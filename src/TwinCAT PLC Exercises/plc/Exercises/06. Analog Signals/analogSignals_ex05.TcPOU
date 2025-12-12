@@ -3,20 +3,20 @@
   <POU Name="analogSignals_ex05" Id="{7dec8ca8-615b-45b9-835c-4212b8af76d4}" SpecialFunc="None">
     <Declaration><![CDATA[PROGRAM analogSignals_ex05
 VAR
-	Frawsensor			: REAL;
-	fAnalogOutput		: REAL;
+	rpmcontrol			: REAL;
+	rpm					: REAL;
 	
 	LIN_TRAFO 			: FB_Scale;
 END_VAR
 ]]></Declaration>
     <Implementation>
       <ST><![CDATA[LIN_TRAFO(
-	fIN:= frawsensor, 
+	fIN:= rpmcontrol, 
 	fIN_min:= 0, 
-	fIN_max:= 50, 
+	fIN_max:= 120, 
 	fOUT_min:= 4, 
 	fOUT_max:= 20, 
-	fOUT=> fAnalogOutput);]]></ST>
+	fOUT=> rpm);]]></ST>
     </Implementation>
   </POU>
 </TcPlcObject>
