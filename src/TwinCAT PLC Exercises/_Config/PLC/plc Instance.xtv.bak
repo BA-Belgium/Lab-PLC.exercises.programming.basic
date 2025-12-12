@@ -1,21 +1,14 @@
 <?xml version="1.0"?>
 <TcSmItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.beckhoff.com/schemas/2012/07/TcSmProject" TcSmVersion="1.0" TcVersion="3.1.4026.19" ClassName="CTComPlcObjDef">
-	<Instance TmcHash="{D4E8C43B-EAAB-9A6D-8E2F-BF4512338730}">
+	<Instance TmcHash="{784363B0-7B67-C914-3308-7E9D061CA219}">
 		<Vars VarGrpType="1">
 			<Name>PlcTask Inputs</Name>
 			<Var>
-				<Name>LogicalCircuits_Ex02.S1.DI_Input</Name>
+				<Name>analogSignals_ex07.OK.DI_Input</Name>
 				<Type>BOOL</Type>
 			</Var>
 			<Var>
-				<Name>LogicalCircuits_Ex02.S2.DI_Input</Name>
-				<Type>BOOL</Type>
-			</Var>
-		</Vars>
-		<Vars VarGrpType="2" AreaNo="1">
-			<Name>PlcTask Outputs</Name>
-			<Var>
-				<Name>LogicalCircuits_Ex02.P1.DO_Output</Name>
+				<Name>analogSignals_ex07.Reset.DI_Input</Name>
 				<Type>BOOL</Type>
 			</Var>
 		</Vars>

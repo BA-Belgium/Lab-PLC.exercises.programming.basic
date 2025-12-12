@@ -4,7 +4,7 @@
     <Declaration><![CDATA[PROGRAM AnalogSignals
 ]]></Declaration>
     <Implementation>
-      <ST><![CDATA[]]></ST>
+      <ST><![CDATA[analogSignals_ex07();]]></ST>
     </Implementation>
   </POU>
 </TcPlcObject>

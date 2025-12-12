@@ -12,11 +12,11 @@ VAR
 END_VAR
 ]]></Declaration>
     <Implementation>
-      <ST><![CDATA[LogicalCircuits();
+      <ST><![CDATA[//LogicalCircuits();
 //Safety();
 //LogicAndCounters();
 //Timers();
-//AnalogSignals();
+AnalogSignals();
 //AppliedMathematics();
 //Arrays();
 //FunctionsAndFunctionBlocks();

@@ -22,7 +22,7 @@ VAR
 END_VAR
 ]]></Declaration>
     <Implementation>
-      <ST><![CDATA[flankok(CLK:= ok, Q=> );
+      <ST><![CDATA[flankok(CLK:= ok.isOn, Q=> );
 
 LIN_TRAFO(
 	fIN:= weightsensor, 
@@ -34,26 +34,26 @@ LIN_TRAFO(
 	
 //tellers
 	tellersmall(
-	CU:= (weight >= 0.0) AND (weight = 5) AND (OK), 
-	RESET:= reset, 
+	CU:= (weight > 0.0) AND (weight <= 5) AND (OK.isOn), 
+	RESET:= reset.isOn, 
 	PV:= , 
 	Q=> , 
 	CV=> );
 	tellernormal(
-	CU:= (weight > 5) AND (weight = 10) AND (OK), 
-	RESET:= reset, 
+	CU:= (weight > 5) AND (weight <= 10) AND (OK.isOn), 
+	RESET:= reset.isOn, 
 	PV:= , 
 	Q=> , 
 	CV=> );
 	tellerbig(
-	CU:= (weight > 10) AND (weight = 20) AND (OK), 
-	RESET:= reset, 
+	CU:= (weight > 10) AND (weight <= 20) AND (OK.isOn), 
+	RESET:= reset.isOn, 
 	PV:= , 
 	Q=> , 
 	CV=> );
 	telleroversized(
-	CU:= (weight > 20) AND (weight =50) AND (OK), 
-	RESET:= reset, 
+	CU:= (weight > 20) AND (weight <=50) AND (OK.isOn), 
+	RESET:= reset.isOn, 
 	PV:= , 
 	Q=> , 
 	CV=> );
@@ -61,7 +61,7 @@ LIN_TRAFO(
 gemiddelde4(
 	fValue:= weight, 
 	bAdd:= flankok.Q, 
-	bReset:= reset, 
+	bReset:= reset.isOn, 
 	fAverage=> gemiddeldgewicht, 
 	nCount=> hoeveelvaliezen);]]></ST>
     </Implementation>

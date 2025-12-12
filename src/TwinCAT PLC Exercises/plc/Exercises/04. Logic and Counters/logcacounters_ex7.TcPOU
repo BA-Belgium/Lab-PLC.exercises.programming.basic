@@ -3,7 +3,7 @@
   <POU Name="logcacounters_ex7" Id="{97827304-5919-4ae7-a0de-0e6999cde2b0}" SpecialFunc="None">
     <Declaration><![CDATA[PROGRAM logcacounters_ex7
 VAR
-	B1				: DigitalInput_NO;
+	B11				: DigitalInput_NO;
 	B2				: DigitalInput_NO;
 	B3				: DigitalInput_NO;
 	
@@ -20,7 +20,7 @@ VAR
 END_VAR
 ]]></Declaration>
     <Implementation>
-      <ST><![CDATA[B1F(clk := B1);
+      <ST><![CDATA[B1F(clk := B11);
 B2F(clk := B2);
 B3F(clk := B3);
 B2FF(clk := B2);
@@ -28,7 +28,7 @@ B2FF(clk := B2);
 
 	
 //openen en sluiten slagboom
-IF B1.isOn THEN
+IF B11.isOn THEN
 	M1.On();
 END_IF
 IF B2FF.Q THEN
