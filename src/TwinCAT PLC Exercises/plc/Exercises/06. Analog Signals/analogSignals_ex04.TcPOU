@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <TcPlcObject Version="1.1.0.1">
-  <POU Name="analogSignals_ex03" Id="{2389053f-b0ea-466c-abbb-a044e0555fc9}" SpecialFunc="None">
-    <Declaration><![CDATA[PROGRAM analogSignals_ex03
+  <POU Name="analogSignals_ex03_1" Id="{68460e71-0926-4dae-aec1-3e9f2107b839}" SpecialFunc="None">
+    <Declaration><![CDATA[PROGRAM analogSignals_ex03_1
 VAR
 	Frawsensor			: REAL;
 	weight				: REAL;
