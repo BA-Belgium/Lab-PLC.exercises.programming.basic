@@ -18,7 +18,7 @@ END_VAR
       <Get Name="Get" Id="{2f12a057-fcc5-4a70-a53e-bc0a04fc1234}">
         <Declaration><![CDATA[]]></Declaration>
         <Implementation>
-          <ST><![CDATA[position0 := not Switch_2P;]]></ST>
+          <ST><![CDATA[position0 := not DI_Input;]]></ST>
         </Implementation>
       </Get>
     </Property>
@@ -27,7 +27,7 @@ END_VAR
       <Get Name="Get" Id="{1a260927-d8ec-49aa-a2f8-cec52816d6c4}">
         <Declaration><![CDATA[]]></Declaration>
         <Implementation>
-          <ST><![CDATA[position1 := Switch_2P;]]></ST>
+          <ST><![CDATA[position1 := DI_Input;]]></ST>
         </Implementation>
       </Get>
     </Property>

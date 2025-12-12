@@ -25,15 +25,7 @@ B2F(clk := B2);
 B3F(clk := B3);
 B2FF(clk := B2);
 
-teller(
-	CU:= (B1.isOn AND B2F.Q), 
-	CD:= B3F.Q, 
-	RESET:= , 
-	LOAD:= , 
-	PV:= , 
-	QU=> 20, 
-	QD=> 0, 
-	CV=> 0);
+
 	
 //openen en sluiten slagboom
 IF B1.isOn THEN

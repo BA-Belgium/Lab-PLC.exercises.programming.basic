@@ -214,9 +214,6 @@ ISBN: 978-87-4305-780-2</Description>
     <Compile Include="_Library\Inputs\POUs\motoroef2_12.TcPOU">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="_Library\Inputs\POUs\number.TcPOU">
-      <SubType>Code</SubType>
-    </Compile>
     <Compile Include="_Library\Inputs\POUs\Switch_2P.TcPOU">
       <SubType>Code</SubType>
     </Compile>

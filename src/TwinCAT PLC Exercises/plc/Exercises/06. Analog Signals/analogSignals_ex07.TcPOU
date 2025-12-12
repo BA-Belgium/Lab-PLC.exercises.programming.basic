@@ -17,7 +17,7 @@ VAR
 	tellerbig			: CTU;
 	telleroversized		: CTU;
 	LIN_TRAFO 			: FB_Scale;
-	gemiddelde			: gemiddelde;
+	gemiddelde4			: gemiddelde;
 	flankok				: R_trig;
 END_VAR
 ]]></Declaration>
@@ -58,7 +58,7 @@ LIN_TRAFO(
 	Q=> , 
 	CV=> );
 	
-gemiddelde(
+gemiddelde4(
 	fValue:= weight, 
 	bAdd:= flankok.Q, 
 	bReset:= reset, 
