@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1">
+  <POU Name="DigitalOutputLatched" Id="{2714d9d5-4d1f-461b-b06d-603b4874e350}" SpecialFunc="None">
+    <Declaration><![CDATA[FUNCTION_BLOCK DigitalOutputLatched
+VAR_INPUT
+	on					: BOOL;
+	off					: BOOL;
+END_VAR
+VAR_OUTPUT
+	output				: BOOL;
+END_VAR
+]]></Declaration>
+    <Implementation>
+      <ST><![CDATA[IF off		THEN
+	output 	:= FALSE;
+ELSIF on 	THEN
+	output 	:= TRUE;
+END_IF]]></ST>
+    </Implementation>
+  </POU>
+</TcPlcObject>

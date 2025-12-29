@@ -3,21 +3,33 @@
   <POU Name="LogicalCircuits_Ex09" Id="{a03fc3fd-ee5a-48b3-b422-58171a2fc09a}" SpecialFunc="None">
     <Declaration><![CDATA[PROGRAM LogicalCircuits_Ex09
 VAR
-	stand 				: Switch_4P;
-	P1 					: DigitalOutput;
-	P2 					: DigitalOutput;
-	P3 					: DigitalOutput;
+	SX					: WorkshopLibrary.DigitalSwitch4P;
+	S1					: WorkshopLibrary.DigitalInputNO;
+	S2					: WorkshopLibrary.DigitalInputNO;
+	S3					: WorkshopLibrary.DigitalInputNO;
+	P1					: WorkshopLibrary.DigitalOutput;
+	P2					: WorkshopLibrary.DigitalOutput;
+	P3					: WorkshopLibrary.DigitalOutput;
 END_VAR]]></Declaration>
     <Implementation>
-      <ST><![CDATA[IF stand.Po0 THEN
-	P1.Off(); P2.Off(); P3.Off();
-ELSIF stand.Po1 THEN
-	P1.On(); P2.Off(); P3.Off();
-ELSIF Stand.Po2 THEN
-	P1.Off(); P2.On(); P3.Off();
-ELSIF stand.Po3 THEN
-	P1.On(); P2.On(); P3.On();
-END_IF]]></ST>
+      <ST><![CDATA[// Evaluate inputs
+S1(input := GVL_IO.input01);
+S2(input := GVL_IO.input02);
+S3(input := GVL_IO.input03);
+SX(
+	input01	:= S1.isActive, 
+	input02	:= S2.isActive, 
+	input03	:= S3.isActive, 
+	inPos00	=> , 
+	inPos01	=> , 
+	inPos02	=> , 
+	inPos03	=> );
+
+// process outputs
+P1(on:=SX.inPos01 OR SX.inPos03, output=>GVL_IO.output01);
+P2(on:=SX.inPos02 OR SX.inPos03, output=>GVL_IO.output02);
+P3(on:=SX.inPos03, output=>GVL_IO.output03);
+]]></ST>
     </Implementation>
   </POU>
 </TcPlcObject>

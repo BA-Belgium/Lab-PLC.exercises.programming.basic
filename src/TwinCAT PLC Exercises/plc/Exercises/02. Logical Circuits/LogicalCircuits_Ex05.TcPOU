@@ -1,20 +1,22 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <TcPlcObject Version="1.1.0.1">
-  <POU Name="LogicalCircuits_Ex05" Id="{2d96f754-6237-492d-9093-677d5cca66a0}" SpecialFunc="None">
+  <POU Name="LogicalCircuits_Ex05" Id="{95e52775-cc91-4014-97ae-c517ac6c8357}" SpecialFunc="None">
     <Declaration><![CDATA[PROGRAM LogicalCircuits_Ex05
 VAR
-	stand 				: Switch_2P;
-	P1 					: DigitalOutput;
-	P2 					: DigitalOutput;
+	I1					: WorkshopLibrary.DigitalInputNO;
+	S1					: WorkshopLibrary.DigitalSwitch;
+	P1					: WorkshopLibrary.DigitalOutput;
+	P2					: WorkshopLibrary.DigitalOutput;
 END_VAR]]></Declaration>
     <Implementation>
-      <ST><![CDATA[IF stand.position1 THEN 
-	P1.On ();
-	P2.On ();
-ELSE 
-	P1.Off ();
-	P2.Off ();
-END_IF]]></ST>
+      <ST><![CDATA[// Evaluate inputs
+I1(input := GVL_IO.input01);
+S1(input := I1.isActive);
+
+// process outputs
+P1(on:=S1.inPos01, output=>GVL_IO.output01);
+P2(on:=S1.inPos01, output=>GVL_IO.output02);
+]]></ST>
     </Implementation>
   </POU>
 </TcPlcObject>

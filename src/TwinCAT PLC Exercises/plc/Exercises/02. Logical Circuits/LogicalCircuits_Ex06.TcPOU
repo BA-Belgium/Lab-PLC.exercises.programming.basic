@@ -1,20 +1,20 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <TcPlcObject Version="1.1.0.1">
-  <POU Name="LogicalCircuits_Ex06" Id="{36f72446-03f5-4adf-86a9-10882a1bc829}" SpecialFunc="None">
+  <POU Name="LogicalCircuits_Ex06" Id="{f8904362-3413-42e3-9ace-30c633457771}" SpecialFunc="None">
     <Declaration><![CDATA[PROGRAM LogicalCircuits_Ex06
 VAR
-	S1					: DigitalInput_NO;
-	P1 					: DigitalOutput;
-	P2 					: DigitalOutput;
+	S1					: WorkshopLibrary.DigitalInputNO;
+	P1					: WorkshopLibrary.DigitalOutput;
+	P2					: WorkshopLibrary.DigitalOutput;
 END_VAR]]></Declaration>
     <Implementation>
-      <ST><![CDATA[IF S1.isOn THEN
-	P1.Off();
-	P2.On();
-ELSE
-	P1.ON();
-	P2.OFF();	
-END_IF]]></ST>
+      <ST><![CDATA[// Evaluate inputs
+S1(input := GVL_IO.input01);
+
+// process outputs
+P1(on:=S1.isNotActive, output=>GVL_IO.output01);
+P2(on:=S1.isActive, output=>GVL_IO.output02);
+]]></ST>
     </Implementation>
   </POU>
 </TcPlcObject>

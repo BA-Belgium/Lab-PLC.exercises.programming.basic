@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1">
+  <POU Name="DigitalSwitch4P" Id="{1e7f30a2-ece0-498a-b0a8-b1458be53028}" SpecialFunc="None">
+    <Declaration><![CDATA[FUNCTION_BLOCK DigitalSwitch4P
+VAR_INPUT
+	input01				: BOOL;
+	input02				: BOOL;
+	input03				: BOOL;	
+END_VAR
+VAR_OUTPUT
+	inPos00				: BOOL;
+	inPos01				: BOOL;
+	inPos02				: BOOL;
+	inPos03				: BOOL;
+END_VAR
+]]></Declaration>
+    <Implementation>
+      <ST><![CDATA[inPos00		:= 
+inPos01		:=
+inPos02		:=
+inPos03		:= FALSE;	
+
+IF input01 		THEN
+	inPos01		:= TRUE;	
+ELSIF input02 	THEN
+	inPos02		:= TRUE;	
+ELSIF input03 	THEN
+	inPos03		:= TRUE;	
+ELSE
+	inPos00		:= TRUE;	
+END_IF]]></ST>
+    </Implementation>
+  </POU>
+</TcPlcObject>

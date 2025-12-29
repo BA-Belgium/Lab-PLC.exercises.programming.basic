@@ -1,24 +1,25 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <TcPlcObject Version="1.1.0.1">
-  <POU Name="LogicalCircuits_Ex08" Id="{50decc6a-c2c3-4ec9-951a-5beef602821e}" SpecialFunc="None">
+  <POU Name="LogicalCircuits_Ex08" Id="{2ddd4a6c-4954-46a3-9e58-5319934aafc4}" SpecialFunc="None">
     <Declaration><![CDATA[PROGRAM LogicalCircuits_Ex08
 VAR
-	S1					: DigitalInput_NO;
-	S2					: DigitalInput_NO;
-	P1 					: DigitalOutput;
-	P2 					: DigitalOutput;
-	P3 					: DigitalOutput;
+	S1					: WorkshopLibrary.DigitalInputNO;
+	S2					: WorkshopLibrary.DigitalInputNO;
+	P1					: WorkshopLibrary.DigitalOutput;
+	P2					: WorkshopLibrary.DigitalOutput;
+	P3					: WorkshopLibrary.DigitalOutput;
 END_VAR]]></Declaration>
     <Implementation>
-      <ST><![CDATA[IF S1.isOn AND S2.isOff THEN
-	P1.On();
-ELSIF S1.isOff AND S2.isOn THEN
-	P2.On();
-ELSIF S1.isOn AND S2.isOn THEN 
-	P1.Off();
-	P2.Off();
-	P3.On();
-END_IF]]></ST>
+      <ST><![CDATA[// Evaluate inputs
+S1(input := GVL_IO.input01);
+S2(input := GVL_IO.input02);
+
+// process outputs
+P1(on:=S1.isActive AND S2.isNotActive, output=>GVL_IO.output01);
+P2(on:=S1.isNotActive AND S2.isActive, output=>GVL_IO.output02);
+P3(on:=S1.isActive AND S2.isActive, output=>GVL_IO.output03);
+
+]]></ST>
     </Implementation>
   </POU>
 </TcPlcObject>

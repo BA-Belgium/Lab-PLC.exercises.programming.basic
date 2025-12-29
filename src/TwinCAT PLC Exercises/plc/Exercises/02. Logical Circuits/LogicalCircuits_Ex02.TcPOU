@@ -3,16 +3,18 @@
   <POU Name="LogicalCircuits_Ex02" Id="{928081cd-c731-4064-9f20-4dd0f589a3e1}" SpecialFunc="None">
     <Declaration><![CDATA[PROGRAM LogicalCircuits_Ex02
 VAR
-	S1						: DigitalInput_NO;
-	S2						: DigitalInput_NO;
-	P1						: DigitalOutput;
+	S1					: WorkshopLibrary.DigitalInputNO;
+	S2					: WorkshopLibrary.DigitalInputNO;
+	P1					: WorkshopLibrary.DigitalOutput;
 END_VAR]]></Declaration>
     <Implementation>
-      <ST><![CDATA[IF S1.isOn and S2.isOn THEN
-	P1.On();
-ELSE
-	P1.Off();
-END_IF]]></ST>
+      <ST><![CDATA[// Evaluate inputs
+S1(input := GVL_IO.input01);
+S2(input := GVL_IO.input02);
+
+// process outputs
+P1(on:=S1.isActive AND S2.isActive, output=>GVL_IO.output01);
+]]></ST>
     </Implementation>
   </POU>
 </TcPlcObject>

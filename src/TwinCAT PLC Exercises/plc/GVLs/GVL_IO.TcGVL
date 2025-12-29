@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1">
+  <GVL Name="GVL_IO" Id="{77166e16-a205-4723-bd76-65c943f92c1b}">
+    <Declaration><![CDATA[{attribute 'qualified_only'}
+VAR_GLOBAL
+	// Global inputs
+	input01					AT %I*: BOOL;
+	input02					AT %I*: BOOL;
+	input03					AT %I*: BOOL;
+	input04					AT %I*: BOOL;
+	input05					AT %I*: BOOL;
+	input06					AT %I*: BOOL;
+	input07					AT %I*: BOOL;
+	input08					AT %I*: BOOL;
+	
+	// Global outputs
+	output01				AT %Q*: BOOL;
+	output02				AT %Q*: BOOL;
+	output03				AT %Q*: BOOL;
+	output04				AT %Q*: BOOL;
+	output05				AT %Q*: BOOL;
+	output06				AT %Q*: BOOL;
+	output07				AT %Q*: BOOL;
+	output08				AT %Q*: BOOL;
+END_VAR]]></Declaration>
+  </GVL>
+</TcPlcObject>

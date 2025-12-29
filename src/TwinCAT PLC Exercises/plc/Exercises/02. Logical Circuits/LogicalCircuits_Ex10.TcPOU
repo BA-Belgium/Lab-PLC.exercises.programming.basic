@@ -1,19 +1,29 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <TcPlcObject Version="1.1.0.1">
-  <POU Name="LogicalCircuits_Ex10" Id="{47befc8f-72fb-4a91-825d-5f6b8795ce00}" SpecialFunc="None">
+  <POU Name="LogicalCircuits_Ex10" Id="{61cecba0-8e75-4fb6-9369-2352082c13c5}" SpecialFunc="None">
     <Declaration><![CDATA[PROGRAM LogicalCircuits_Ex10
 VAR
-	S1 					: DigitalInput_NO;
-	S2 					: DigitalInput_NC;
-	P1 					: DigitalOutput;
+	S1					: WorkshopLibrary.DigitalInputNO;
+	S2					: WorkshopLibrary.DigitalInputNC;
+	P1					: WorkshopLibrary.DigitalOutput;
+	P2					: WorkshopLibrary.DigitalOutputLatched;
 END_VAR]]></Declaration>
     <Implementation>
-      <ST><![CDATA[IF S1.isOn THEN
-	P1.On();
+      <ST><![CDATA[// Evaluate inputs
+S1(input := GVL_IO.input01);
+S2(input := GVL_IO.input02);
+
+// process outputs
+// Solution with standard output
+IF S1.isActive	THEN
+	P1.on	:= TRUE;
+ELSIF S2.isActive	THEN
+	P1.on	:= FALSE;
 END_IF
-IF S2.broken THEN
-	P1.Off();
-END_IF]]></ST>
+P1(output=>GVL_IO.output01);
+
+// Alternative solution with latched output
+P2(on:= S1.isActive, off:= S2.isActive, output=> GVL_IO.output02);]]></ST>
     </Implementation>
   </POU>
 </TcPlcObject>

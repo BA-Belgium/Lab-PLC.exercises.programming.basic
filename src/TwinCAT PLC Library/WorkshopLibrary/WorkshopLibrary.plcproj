@@ -3,120 +3,45 @@
   <PropertyGroup>
     <FileVersion>1.0.0.0</FileVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{27581cda-5420-4f6d-bd42-522eaae4c6ce}</ProjectGuid>
+    <ProjectGuid>{e6285c3a-54ea-4c06-8c00-1a9702044dd4}</ProjectGuid>
     <SubObjectsSortedByName>true</SubObjectsSortedByName>
     <DownloadApplicationInfo>true</DownloadApplicationInfo>
     <WriteProductVersion>false</WriteProductVersion>
     <GenerateTpy>false</GenerateTpy>
-    <Name>plc</Name>
+    <Name>WorkshopLibrary</Name>
     <ProgramVersion>3.1.4026.20</ProgramVersion>
     <WriteBookmarksToFile>true</WriteBookmarksToFile>
-    <Application>{747264ad-e61f-4987-b58c-1c212f1a692c}</Application>
-    <TypeSystem>{0d81e09f-f5f2-4162-9349-fa964e7c3408}</TypeSystem>
-    <Implicit_Task_Info>{f7b852cd-1ac5-4aa9-87d1-5de24873b6cb}</Implicit_Task_Info>
-    <Implicit_KindOfTask>{e3ce7ca4-9a33-4ad8-a0f9-88c0ac0daedd}</Implicit_KindOfTask>
-    <Implicit_Jitter_Distribution>{eb6c7352-e9ce-4f45-b0c0-2e0e9dc9aa53}</Implicit_Jitter_Distribution>
-    <LibraryReferences>{8b4cd041-14e3-4c46-822c-b6747c8604f1}</LibraryReferences>
-    <Company>Beckhoff Automation Belgium</Company>
+    <Application>{0264595b-7819-43b9-8afe-2d7f9572ce7b}</Application>
+    <TypeSystem>{46182286-ad15-4266-889c-66a13ef68045}</TypeSystem>
+    <Implicit_Task_Info>{3579c693-29fa-4cc0-b150-9db3e8bc34fa}</Implicit_Task_Info>
+    <Implicit_KindOfTask>{74e0fdb1-f7db-41ff-beae-ca00bfc06eb4}</Implicit_KindOfTask>
+    <Implicit_Jitter_Distribution>{5331862d-2ecf-4bc0-a55b-e4e75e6b2304}</Implicit_Jitter_Distribution>
+    <LibraryReferences>{ff62d85a-abcd-4ce2-8ec4-ae83b38b7798}</LibraryReferences>
+    <Company>BA Belgium</Company>
     <Released>false</Released>
-    <Title>ExercicesForPlcProgramming</Title>
+    <Title>Workshop Library</Title>
     <ProjectVersion>1.0.0.0</ProjectVersion>
-    <Description>Exercices of the book 
-Collection of Exercises for PLC Programming
-by Tom Mejer Antonson
-ISBN: 978-87-4305-780-2</Description>
+    <LanguageModelAttributeForLibrary>
+    </LanguageModelAttributeForLibrary>
+    <VirtualLibrary>true</VirtualLibrary>
+    <LibraryCategories>
+      <LibraryCategory xmlns="">
+        <Id>{2238e1f5-5bc0-49ad-b580-f4716b0c6d91}</Id>
+        <Version>1.0.0.0</Version>
+        <DefaultName>BA Belgium</DefaultName>
+      </LibraryCategory>
+    </LibraryCategories>
+    <SelectedLibraryCategories>
+      <Id xmlns="">{2238e1f5-5bc0-49ad-b580-f4716b0c6d91}</Id>
+    </SelectedLibraryCategories>
+    <DefaultNamespace>WorkshopLibrary</DefaultNamespace>
+    <Placeholder>WorkshopLibrary</Placeholder>
+    <Author>BA Belgium</Author>
+    <Description>Examples supplementary to the basic training</Description>
     <CompilerDefines>VISU_USEPROPERTYINFO</CompilerDefines>
+    <GlobalVersionStructureIncluded>true</GlobalVersionStructureIncluded>
+    <POUsForPropertyAccessIncluded>true</POUsForPropertyAccessIncluded>
   </PropertyGroup>
-  <ItemGroup>
-    <Compile Include="Exercises\02. Logical Circuits\LogicalCircuits.TcPOU">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="Exercises\02. Logical Circuits\LogicalCircuits_Ex01.TcPOU">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="Exercises\02. Logical Circuits\LogicalCircuits_Ex05.TcPOU">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="Exercises\02. Logical Circuits\LogicalCircuits_Ex04.TcPOU">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="Exercises\02. Logical Circuits\LogicalCircuits_Ex03.TcPOU">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="Exercises\02. Logical Circuits\LogicalCircuits_Ex02.TcPOU">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="Exercises\02. Logical Circuits\LogicalCircuits_Ex06.TcPOU">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="Exercises\02. Logical Circuits\LogicalCircuits_Ex07.TcPOU">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="Exercises\02. Logical Circuits\LogicalCircuits_Ex10.TcPOU">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="Exercises\02. Logical Circuits\LogicalCircuits_Ex08.TcPOU">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="Exercises\02. Logical Circuits\LogicalCircuits_Ex09.TcPOU">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="Exercises\03. Safety\Safety.TcPOU">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="Exercises\04. Logic and Counters\LogicAndCounters.TcPOU">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="Exercises\05. Timers\Timers.TcPOU">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="Exercises\06. Analog Signals\AnalogSignals.TcPOU">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="Exercises\07. Applied Mathematics\AppliedMathematics.TcPOU">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="Exercises\08. Arrays\Arrays.TcPOU">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="Exercises\09. Functions and Function Blocks\FunctionsAndFunctionBlocks.TcPOU">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="Exercises\10. Strings and Structs\StringsAndStructs.TcPOU">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="Exercises\11. Complex Exercises\ComplexExercises.TcPOU">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="GVLs\GVL_IO.TcGVL">
-      <SubType>Code</SubType>
-      <LinkAlways>true</LinkAlways>
-    </Compile>
-    <Compile Include="MAIN.TcPOU">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="PlcTask.TcTTO">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="Visualization Manager.TcVMO">
-      <SubType>Code</SubType>
-    </Compile>
-  </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Exercises\02. Logical Circuits" />
-    <Folder Include="Exercises\04. Logic and Counters" />
-    <Folder Include="Exercises\05. Timers" />
-    <Folder Include="Exercises\06. Analog Signals" />
-    <Folder Include="Exercises\07. Applied Mathematics" />
-    <Folder Include="Exercises\08. Arrays" />
-    <Folder Include="Exercises\09. Functions and Function Blocks" />
-    <Folder Include="Exercises\03. Safety" />
-    <Folder Include="Exercises\10. Strings and Structs" />
-    <Folder Include="Exercises\11. Complex Exercises" />
-    <Folder Include="Exercises\VISUs" />
-    <Folder Include="GVLs" />
-    <Folder Include="Exercises" />
-  </ItemGroup>
   <ItemGroup>
     <PlaceholderReference Include="Tc2_Standard">
       <DefaultResolution>Tc2_Standard, * (Beckhoff Automation GmbH)</DefaultResolution>
@@ -129,17 +54,68 @@ ISBN: 978-87-4305-780-2</Description>
     <PlaceholderReference Include="Tc3_Module">
       <DefaultResolution>Tc3_Module, * (Beckhoff Automation GmbH)</DefaultResolution>
       <Namespace>Tc3_Module</Namespace>
-      <SystemLibrary>true</SystemLibrary>
-    </PlaceholderReference>
-    <PlaceholderReference Include="WorkshopLibrary">
-      <DefaultResolution>[Workshop Library], * (BA Belgium)</DefaultResolution>
-      <Namespace>WorkshopLibrary</Namespace>
     </PlaceholderReference>
   </ItemGroup>
   <ItemGroup>
-    <None Include="plc.tmc">
-      <SubType>Content</SubType>
-    </None>
+    <Folder Include="Components" />
+    <Folder Include="Components\DUTs" />
+    <Folder Include="Components\POUs" />
+    <Folder Include="Helpers" />
+    <Folder Include="Helpers\DUTs" />
+    <Folder Include="Helpers\POUs" />
+    <Folder Include="IO" />
+    <Folder Include="IO\DUTs" />
+    <Folder Include="IO\POUs" />
+    <Folder Include="Project Information" />
+    <Folder Include="Templates" />
+    <Folder Include="Version" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Components\POUs\LinTransfo.TcPOU">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="IO\POUs\DigitalInputNC.TcPOU">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="IO\POUs\DigitalInputNO.TcPOU">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="IO\POUs\DigitalOutput.TcPOU">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="IO\POUs\DigitalOutputLatched.TcPOU">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="IO\POUs\MMotor.TcPOU">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="IO\POUs\motoroef2_12.TcPOU">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="IO\POUs\DigitalSwitch.TcPOU">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="IO\POUs\DigitalSwitch4P.TcPOU">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Project Information\F_GetCompany.TcPOU">
+      <SubType>Code</SubType>
+      <SystemCall>true</SystemCall>
+    </Compile>
+    <Compile Include="Project Information\F_GetTitle.TcPOU">
+      <SubType>Code</SubType>
+      <SystemCall>true</SystemCall>
+    </Compile>
+    <Compile Include="Project Information\F_GetVersion.TcPOU">
+      <SubType>Code</SubType>
+      <SystemCall>true</SystemCall>
+    </Compile>
+    <Compile Include="Templates\_TemplateFB_1.TcPOU">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Version\Global_Version.TcGVL">
+      <SubType>Code</SubType>
+    </Compile>
   </ItemGroup>
   <ProjectExtensions>
     <PlcProjectOptions>

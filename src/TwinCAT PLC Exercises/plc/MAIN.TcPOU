@@ -12,16 +12,16 @@ VAR
 END_VAR
 ]]></Declaration>
     <Implementation>
-      <ST><![CDATA[//LogicalCircuits();
-//Safety();
-//LogicAndCounters();
-//Timers();
+      <ST><![CDATA[LogicalCircuits();
+Safety();
+LogicAndCounters();
+Timers();
 AnalogSignals();
-//AppliedMathematics();
-//Arrays();
-//FunctionsAndFunctionBlocks();
-//StringsAndStructs();
-//ComplexExercises();]]></ST>
+AppliedMathematics();
+Arrays();
+FunctionsAndFunctionBlocks();
+StringsAndStructs();
+ComplexExercises();]]></ST>
     </Implementation>
   </POU>
 </TcPlcObject>

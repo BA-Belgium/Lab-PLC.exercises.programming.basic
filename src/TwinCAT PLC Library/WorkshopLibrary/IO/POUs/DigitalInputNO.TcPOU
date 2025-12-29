@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1">
+  <POU Name="DigitalInputNO" Id="{548d4a3a-8ea1-4650-aa0c-d68b1bf76137}" SpecialFunc="None">
+    <Declaration><![CDATA[FUNCTION_BLOCK DigitalInputNO
+VAR_INPUT
+	input				: BOOL;
+END_VAR
+VAR_OUTPUT
+	isActive			: BOOL;
+	isNotActive			: BOOL;
+	inputHasRisingEdge	: BOOL;
+	inputHasFallingEdge	: BOOL;
+END_VAR
+VAR
+	edgeR				: r_trig;
+	edgeF				: f_trig;
+END_VAR]]></Declaration>
+    <Implementation>
+      <ST><![CDATA[isActive				:= input;
+isNotActive				:= NOT input;
+
+edgeR(CLK:=isActive, Q=>inputHasRisingEdge);
+edgeF(CLK:=NOT isActive, Q=>inputHasFallingEdge);
+]]></ST>
+    </Implementation>
+  </POU>
+</TcPlcObject>

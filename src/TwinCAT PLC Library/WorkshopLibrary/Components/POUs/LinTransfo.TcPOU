@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1">
+  <POU Name="LinTransfo" Id="{f6f13783-b748-42a3-ba0a-5db72e3925f9}" SpecialFunc="None">
+    <Declaration><![CDATA[FUNCTION_BLOCK LinTransfo
+VAR_INPUT
+	fIN				: REAL;
+	fIN_min 		: REAL;
+	fIN_max			: REAL;
+	fOUT_min		: REAL;
+	fOUT_max 		: REAL;
+END_VAR
+VAR_OUTPUT
+	fOUT 			: REAL;	
+END_VAR
+VAR
+END_VAR
+]]></Declaration>
+    <Implementation>
+      <ST><![CDATA[fOUT := fOUT_min + (fIN - fIN_MIN) * (fOUT_max - fOUT_min) / (fIN_max - fIN_min);]]></ST>
+    </Implementation>
+  </POU>
+</TcPlcObject>

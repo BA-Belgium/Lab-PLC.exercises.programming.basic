@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1">
+  <POU Name="DigitalOutput" Id="{2083ad13-3ca1-405f-88ac-d150cb014f89}" SpecialFunc="None">
+    <Declaration><![CDATA[FUNCTION_BLOCK DigitalOutput
+VAR_INPUT
+	on					: BOOL;
+END_VAR
+VAR_OUTPUT
+	output				: BOOL;
+END_VAR
+]]></Declaration>
+    <Implementation>
+      <ST><![CDATA[output 					:= on;
+]]></ST>
+    </Implementation>
+  </POU>
+</TcPlcObject>

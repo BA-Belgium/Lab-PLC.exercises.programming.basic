@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1">
+  <POU Name="_TemplateFB_1" Id="{2323263b-6f73-4322-9918-d8512b5e00f4}" SpecialFunc="None">
+    <Declaration><![CDATA[{attribute 'no_explicit_call' := 'do not call this POU directly, call execute'} 
+FUNCTION_BLOCK _TemplateFB_1
+VAR
+END_VAR
+]]></Declaration>
+    <Implementation>
+      <ST><![CDATA[// NO CODE HERE, USE execute]]></ST>
+    </Implementation>
+    <Method Name="execute" Id="{cbc726b1-62f0-4983-a529-a06c892c6489}">
+      <Declaration><![CDATA[METHOD execute
+]]></Declaration>
+      <Implementation>
+        <ST><![CDATA[]]></ST>
+      </Implementation>
+    </Method>
+  </POU>
+</TcPlcObject>

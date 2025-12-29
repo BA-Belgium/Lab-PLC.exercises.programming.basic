@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1">
+  <POU Name="DigitalSwitch" Id="{7cf7d6ce-542d-42cf-9986-2aae388a3fae}" SpecialFunc="None">
+    <Declaration><![CDATA[FUNCTION_BLOCK DigitalSwitch
+VAR_INPUT
+	input				: BOOL;
+END_VAR
+VAR_OUTPUT
+	inPos00				: BOOL;
+	inPos01				: BOOL;
+END_VAR
+]]></Declaration>
+    <Implementation>
+      <ST><![CDATA[inPos00 	:= NOT input;
+inPos01		:= input;	]]></ST>
+    </Implementation>
+  </POU>
+</TcPlcObject>
